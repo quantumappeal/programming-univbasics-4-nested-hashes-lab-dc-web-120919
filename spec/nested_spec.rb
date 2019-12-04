@@ -15,7 +15,7 @@ def hopper
   programmer_hash =
   {
     programmer_hash =
-      :galan_kay => {
+      :alan_kay => {
         :known_for => "COBOL"
         :languages => ["COBOL", "FORTRAN"]
       }
@@ -40,13 +40,13 @@ def hopper
   def changing_alan
       {
     programmer_hash =
-      :grace_hopper => {
+      :alan_kay => {
         :known_for => "COBOL"
         :languages => ["COBOL", "FORTRAN"]
       }
   }
-  alans_new_info = "GUI"
-  
+    alans_new_info = "GUI"
+    programmer_hash[:alan_kay][:known_for] = alans_new_info
   describe "#changing_alan" do
     it "operates on the programmer_hash and changes what Alan Kay is known for, returning the newly-changed hash" do
       expect(changing_alan[:alan_kay][:known_for]).to eq("GUI")
