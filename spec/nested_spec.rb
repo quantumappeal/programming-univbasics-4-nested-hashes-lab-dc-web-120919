@@ -32,10 +32,21 @@ def hopper
         :languages => ["COBOL", "FORTRAN"]
       }
   }
-    programmer_hash[:yukihiro_matsumoto] =
-    end
+		 programmer_hash[:yukihiro_matsumoto] = {}
+		 programmer_hash[:yukihiro_matsumoto][:known_for] = "Ruby"
+		 programmer_hash[:yukihiro_matsumoto][:languages] = ["LISP", "C"]
   end
 
+  def changing_alan
+      {
+    programmer_hash =
+      :grace_hopper => {
+        :known_for => "COBOL"
+        :languages => ["COBOL", "FORTRAN"]
+      }
+  }
+  alans_new_info = "GUI"
+  
   describe "#changing_alan" do
     it "operates on the programmer_hash and changes what Alan Kay is known for, returning the newly-changed hash" do
       expect(changing_alan[:alan_kay][:known_for]).to eq("GUI")
